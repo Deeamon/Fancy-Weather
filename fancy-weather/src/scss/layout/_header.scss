@@ -1,0 +1,27 @@
+.header{
+  padding: $padding;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__tools {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__search-form {
+  display: flex;
+}
+
+@media (max-width: 780px){
+  .header{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__search-form{
+    margin-top: $margin-righ;
+  }
+}
