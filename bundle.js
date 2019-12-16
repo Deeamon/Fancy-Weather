@@ -116,7 +116,7 @@ eval("const {\n  Render\n} = __webpack_require__(/*! ./render */ \"./src/js/rend
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("class DateAndTimeProvider {\n  constructor() {\n    this._TIMEZONEDB_API_TOKEN = 'OUQPVA35BH70';\n  }\n\n  async getDataAndTime(latitude, longitude) {\n    this._URL = `http://api.timezonedb.com/v2.1/get-time-zone?key=${this._TIMEZONEDB_API_TOKEN}&format=json&by=position&lat=${latitude}&lng=${longitude}`;\n    return (await fetch(this._URL)).json();\n  }\n\n}\n\nmodule.exports = {\n  DateAndTimeProvider\n};\n\n//# sourceURL=webpack:///./src/js/dateAndTimeProvider.js?");
+eval("class DateAndTimeProvider {\n  constructor() {\n    this._TIMEZONEDB_API_TOKEN = 'OUQPVA35BH70';\n  }\n\n  async getDataAndTime(latitude, longitude) {\n    this._URL = `https://api.timezonedb.com/v2.1/get-time-zone?key=${this._TIMEZONEDB_API_TOKEN}&format=json&by=position&lat=${latitude}&lng=${longitude}`;\n    return (await fetch(this._URL)).json();\n  }\n\n}\n\nmodule.exports = {\n  DateAndTimeProvider\n};\n\n//# sourceURL=webpack:///./src/js/dateAndTimeProvider.js?");
 
 /***/ }),
 
